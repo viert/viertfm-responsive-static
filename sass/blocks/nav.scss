@@ -1,0 +1,105 @@
+/* NAVIGATION */ 
+
+.nav__items {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 20px 8px;
+    margin: 0;
+}
+
+.nav__item {
+    width: 20%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav__item a {
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+
+.nav__item-icon {
+    font-size: 32px;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.nav__item--player .nav__item-icon::before {
+    content: "\f025";
+}
+
+.nav__item--order .nav__item-icon::before {
+    content: "\f001";
+}
+
+.nav__item--history .nav__item-icon::before {
+    content: "\f0ca";
+}
+
+.nav__item--online .nav__item-icon::before {
+    content: "\f0c0";
+}
+
+.nav__item--account .nav__item-icon::before {
+    content: "\f013";
+}
+
+.nav__item-text {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+@media #{$tablet} {
+    .nav {
+        width: 33.3334%;
+    }
+    .nav__items {
+        flex-direction: column;
+    }
+
+    .nav__item {
+        height: 56px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav__item a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav__item-icon {
+        display: inline;
+        line-height: 56px;
+        width: 46px;
+    }
+
+    .nav__item-text {
+        line-height: 56px;
+        font-size: 18px;
+    }
+}
+
+@media #{$desktop} {
+    .nav {
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .nav__items {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    .nav__item {
+        text-align: center;
+    }
+    .nav__item a {
+        justify-content: center;
+    }
+}

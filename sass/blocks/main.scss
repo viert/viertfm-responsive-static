@@ -1,0 +1,31 @@
+.page-main {
+    width: 100%;
+}
+
+.page-wrap {
+    @include clearfix();
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media #{$tablet} {
+    .page-wrap {
+        padding: 0 5%;
+        display: flex;
+    }
+    .page-main {
+        width: 100%;
+    }
+}
+
+@media #{$desktop} {
+    .page-wrap {
+        padding: 0;
+        width: 1200px;
+        margin: 0 auto;
+        display: block;
+    }
+    .page-main {
+        width: 100%;
+    }
+}

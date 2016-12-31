@@ -1,0 +1,131 @@
+/* PLAYER */
+
+.player {
+    /*padding: 8px 20px;*/
+}
+
+.player__main {
+    background: center center no-repeat url(../covers/nickelback_here_and_now.jpg);
+    background-size: 100%;
+    width: 90vw;
+    height: 90vw;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 0 0 5px black, 1px 1px 1px black;
+    position: relative;
+}
+
+.player__main a {
+    color: white;
+    text-decoration: none;
+}
+
+.player__main-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.player__artist {
+    margin: 0;
+    padding: 8px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.player__ctrlbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -23px;
+    margin-left: -23px;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    font-family: FontAwesome;
+    font-size: 40px;
+    text-align: center;
+}
+
+.player__ctrlbtn--play .player__ctrlbtn-link::before {
+    content: "\f04b";
+    position: relative;
+    left: 1px;
+}
+
+.player__ctrlbtn--pause .player__ctrlbtn-link::before {
+    content: "\f04c";
+}
+
+.player__song {
+    text-align: center;
+}
+
+.player__album {
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 8px;
+}
+
+
+@media #{$tablet} {
+    .player__main {
+        width: 60vw;
+        height: 60vw;
+        position: relative;
+        top: 65px;
+        margin-bottom: 90px;
+    }
+    .player__main-wrapper {
+        position: relative;
+        top: -65px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 60px;
+        box-sizing: border-box;
+        height: 60px;
+        background-color: white;
+        color: black;
+        text-shadow: initial;
+    }
+    .player__main-wrapper a {
+        color: black;
+    }
+    .player__artist {
+        padding: 0 0 4px;
+        width: 100%;
+    }
+    .player__artist, .player__song, .player__album {
+        text-align: left;
+        flex-grow: 0;
+    }
+    .player__album {
+        padding-left: 8px;
+        padding-bottom: 16px;
+    }
+    .player__ctrlbtn {
+        left: 0;
+        top: 8px;
+        border: 1px solid #444444;
+        border-radius: 2px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+
+@media #{$desktop} {
+    .player__main {
+        width: 750px;
+        height: 750px;
+        top: 80px;
+    }
+
+    .player__main-wrapper {
+        top: -80px;
+        height: 80px;
+    }
+}
