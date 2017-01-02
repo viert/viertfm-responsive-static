@@ -118,3 +118,27 @@
 .settings__stat-value {
     width: 33.3333%;
 }
+
+@media #{$tablet} {
+    .settings__form-field {
+        flex-direction: row;
+    }
+    .settings--account .settings__form-label {
+        line-height: 40px;
+        padding-bottom: 0;
+        width: 20%;
+    }
+}
+
+@media #{$desktop} {
+    .settings {
+        box-sizing: border-box;
+    }
+    .settings--stats {
+        width: 48%;
+        order: 2;
+    }
+    .settings__form {
+        width: 48%;
+    }
+}

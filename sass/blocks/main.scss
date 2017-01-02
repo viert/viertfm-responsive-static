@@ -28,4 +28,9 @@
     .page-main {
         width: 100%;
     }
+
+    .page-main--account {
+        display: flex;
+        justify-content: space-between;
+    }
 }
