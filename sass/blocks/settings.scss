@@ -1,0 +1,120 @@
+.settings {
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.settings__title {
+    background: white;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+}
+
+.settings__form-field {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 12px;
+}
+
+.settings__form-field--radio {
+    flex-direction: row;
+}
+
+.settings__form-label {
+    padding-bottom: 4px;
+    // height: 40px;
+    // line-height: 40px;
+}
+
+.settings__form-input {
+    outline: none;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    flex-grow: 1;
+    border: none;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.settings__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.settings__button {
+    border: none;
+    border-radius: 2px;
+    background-color: #008cba;
+    color: white;
+    // font-weight: bold;
+    padding: 12px 24px;
+    margin-left: 8px;
+}
+
+.settings__button--danger {
+    background-color: #cf2a0e;
+}
+
+.settings__form-input--radio {
+    display: none;
+}
+
+.settings__form-field--radio .settings__form-label {
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    position: relative;
+    display: flex;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin-right: 12px;
+    }
+}
+
+.settings__form-input--radio:checked + .settings__form-label {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #444;
+    }
+}
+
+.settings--stream .settings__form-field--radio:last-child {
+    margin-bottom: 0;
+}
+
+.settings__stats {
+    display: flex;
+    padding-bottom: 12px;
+    &:last-child {
+        padding-bottom: 4px;
+    }
+}
+
+.settings__stat-name {
+    width: 66.6667%;
+    font-weight: bold;
+}
+
+.settings__stat-value {
+    width: 33.3333%;
+}

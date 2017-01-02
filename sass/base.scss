@@ -1,6 +1,9 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Exo 2', 'Helvetica Neue', Tahoma, Arial, sans-serif;
     font-size: 14px;
+}
+
+body, input, textarea, button {
+    font-family: 'Exo 2', 'Helvetica Neue', Tahoma, Arial, sans-serif;
 }
