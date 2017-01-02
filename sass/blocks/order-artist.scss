@@ -1,0 +1,45 @@
+.order__artist {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.order__page-title {
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.order__artist-items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.order__artist-item a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+.order__artist-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 6px 0;
+}
+
+@media #{$tablet} {
+    .order__artist-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .order__artist-item {
+        width: 50%;
+    }
+}
+
+@media #{$desktop} {
+    .order__artist-item {
+        width: 25%;
+    }
+}
