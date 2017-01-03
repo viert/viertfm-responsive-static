@@ -1,0 +1,74 @@
+.ordersong {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.ordersong__album-items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.ordersong__album-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ordersong__album-item:last-child {
+    margin-bottom: 0;
+    border: none;
+}
+
+.ordersong__album-cover {
+    width: 100%;
+}
+
+.ordersong__album-cover img {
+    width: 100%;
+}
+
+.ordersong__album-title {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ordersong__album-year {
+    align-self: center;
+    text-align: center;
+}
+
+.ordersong__songlist {
+    padding-left: 30px;
+    margin: 20px 0;
+}
+
+.ordersong__songlist-item a {
+    text-decoration: none;
+    color: #008cba;    
+}
+.ordersong__songlist-item h3 {
+    margin: 0 0 8px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+@media #{$desktop} {
+    .ordersong__album-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ordersong__album-item {
+        width: 350px;
+        margin-right: 55px;
+        border: none;
+    }
+    .ordersong__album-item:nth-child(3n) {
+        margin-right: 0;
+    }
+}
