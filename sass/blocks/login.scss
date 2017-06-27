@@ -1,0 +1,36 @@
+.login {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__title {
+    font-size: 18px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.login__ulogin {
+    text-align: center;
+}
+
+.login__note {
+    margin: 12px 0;
+}
+
+.login__note a {
+    color: #009699;
+}
+
+@media #{$desktop} {
+    .login__note {
+        margin: 32px 0;
+    }
+    .login__title {
+        margin: 0 0 40px;
+    }
+}
